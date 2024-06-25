@@ -1,4 +1,6 @@
 
+# CANDDi Note: Forked because we wanted it to work with serverless v4
+
 # Serverless Prune Plugin
 
 Following deployment, the Serverless Framework does not purge previous versions of functions from AWS, so the number of deployed versions can grow out of hand rather quickly. This plugin allows pruning of all but the most recent version(s) of managed functions from AWS. This plugin is compatible with Serverless 1.x and higher.
@@ -42,7 +44,7 @@ sls prune -n <number of version to keep> -f helloWorld
 
 ### Region/Stage
 
-The previous usage examples prune the default stage in the default region. Use `--stage` and `--region` to specify: 
+The previous usage examples prune the default stage in the default region. Use `--stage` and `--region` to specify:
 ```sh
 sls prune -n <number of version to keep> --stage production --region eu-central-1
 ```
